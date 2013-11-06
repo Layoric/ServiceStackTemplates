@@ -1,0 +1,44 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>ModelName.cs</DefaultName>
+    <Name>ServiceStack Model with Backing Service</Name>
+    <Description>ServiceStack Model with Backing Service</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>ServiceStack</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>ServiceStack.Common</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>ServiceStack.Interfaces</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>ServiceStack.OrmLite</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>ServiceStack.ServiceInterface</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>ServiceStack.Text</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>System.Web</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem SubType="Code" TargetFileName="Models/$fileinputname$.cs" ReplaceParameters="true">
+		ServiceModelTemplate.cs
+	</ProjectItem>
+	<ProjectItem SubType="Code" TargetFileName="DTOs/$fileinputname$Request.cs" ReplaceParameters="true">
+		ServiceDtoTemplate.cs
+	</ProjectItem>
+	<ProjectItem SubType="Code" TargetFileName="Services/$fileinputname$Service.cs" ReplaceParameters="true">
+		ServiceTemplate.cs
+	</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
