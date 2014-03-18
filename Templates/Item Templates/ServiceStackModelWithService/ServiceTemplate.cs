@@ -4,10 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net;
-using ServiceStack.Common.Web;
-using ServiceStack.DataAnnotations;
-using ServiceStack.ServiceHost;
-using ServiceStack.ServiceInterface;
+using ServiceStack;
 using $rootnamespace$.DTOs;
 
 namespace $rootnamespace$.Services
